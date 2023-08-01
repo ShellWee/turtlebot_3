@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/turtlebot3_example_generate_messages_lisp"
-  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.lisp"
-  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Result.lisp"
-  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Goal.lisp"
   "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Action.lisp"
-  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Feedback.lisp"
-  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionResult.lisp"
   "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.lisp"
+  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.lisp"
+  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionResult.lisp"
+  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Feedback.lisp"
+  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Goal.lisp"
+  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Result.lisp"
+  "CMakeFiles/turtlebot3_example_generate_messages_lisp"
 )
 
 # Per-language clean rules from dependency scanning.

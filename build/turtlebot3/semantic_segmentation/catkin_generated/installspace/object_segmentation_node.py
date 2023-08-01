@@ -39,3 +39,8 @@ if __name__ == '__main__':
     rospy.init_node('object_detection_node')
     node = ObjectDetectionNode()
     rospy.spin()
+
+#   <node pkg="turtlebot3" type="object_segmentation_node" name="object_segmentation_node" output="screen">
+#     <param name="model_path" value="/home/justin/turtlebot3/src/turtlebot3/semantic_segmentation/dnn/frozen_inference_graph_coco.pb" />
+#     <param name="classes_path" value="/home/justin/turtlebot3/src/turtlebot3/semantic_segmentation/dnn/classes.txt" />
+#   </node>

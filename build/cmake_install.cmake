@@ -37,6 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -56,7 +61,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE PROGRAM FILES "/home/justin/turtlebot3/build/catkin_generated/installspace/_setup_util.py")
+  file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE PROGRAM FILES "/home/justin/turtlebot3/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -68,7 +73,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE PROGRAM FILES "/home/justin/turtlebot3/build/catkin_generated/installspace/env.sh")
+  file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE PROGRAM FILES "/home/justin/turtlebot3/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -80,7 +85,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES
+  file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES
     "/home/justin/turtlebot3/build/catkin_generated/installspace/setup.bash"
     "/home/justin/turtlebot3/build/catkin_generated/installspace/local_setup.bash"
     )
@@ -95,7 +100,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES
+  file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES
     "/home/justin/turtlebot3/build/catkin_generated/installspace/setup.sh"
     "/home/justin/turtlebot3/build/catkin_generated/installspace/local_setup.sh"
     )
@@ -110,7 +115,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES
+  file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES
     "/home/justin/turtlebot3/build/catkin_generated/installspace/setup.zsh"
     "/home/justin/turtlebot3/build/catkin_generated/installspace/local_setup.zsh"
     )
@@ -125,7 +130,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES "/home/justin/turtlebot3/build/catkin_generated/installspace/.rosinstall")
+  file(INSTALL DESTINATION "/home/justin/turtlebot3/install" TYPE FILE FILES "/home/justin/turtlebot3/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -138,7 +143,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/justin/turtlebot3/build/turtlebot3_msgs/cmake_install.cmake")
   include("/home/justin/turtlebot3/build/turtlebot3/turtlebot3_navigation/cmake_install.cmake")
   include("/home/justin/turtlebot3/build/turtlebot3_simulations/turtlebot3_simulations/cmake_install.cmake")
-  include("/home/justin/turtlebot3/build/turtlebot3/semantic_segmentation/cmake_install.cmake")
   include("/home/justin/turtlebot3/build/turtlebot3_autorace/turtlebot3_autorace_camera/cmake_install.cmake")
   include("/home/justin/turtlebot3/build/turtlebot3_autorace/turtlebot3_autorace_detect/cmake_install.cmake")
   include("/home/justin/turtlebot3/build/turtlebot3/turtlebot3_bringup/cmake_install.cmake")

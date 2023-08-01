@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/turtlebot3_msgs_generate_messages_lisp"
   "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_msgs/msg/SensorState.lisp"
-  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_msgs/msg/VersionInfo.lisp"
   "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_msgs/msg/Sound.lisp"
+  "/home/justin/turtlebot3/devel/share/common-lisp/ros/turtlebot3_msgs/msg/VersionInfo.lisp"
+  "CMakeFiles/turtlebot3_msgs_generate_messages_lisp"
 )
 
 # Per-language clean rules from dependency scanning.
